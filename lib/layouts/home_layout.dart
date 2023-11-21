@@ -5,6 +5,22 @@ class HomeLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: SafeArea(
+        child: Row(
+          children: [
+            Column(
+              children: [Icon(Icons.add_home_outlined), Text('Label 1')],
+            ),
+            Column(
+              children: [Icon(Icons.man_4), Text('Label 1')],
+            ),
+            Column(
+              children: [Icon(Icons.woman_2), Text('Label 1')],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
